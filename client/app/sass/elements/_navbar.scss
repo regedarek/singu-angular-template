@@ -1,0 +1,31 @@
+.navbar {
+  background-color: $blondi-blue;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  z-index: 9999;
+  .wraper {
+    ul.base-menu {
+      margin: 0;
+      padding: 0;
+      li {
+        min-width: 100px;
+        height: 49px;
+        @include pad(10px);
+        display: inline-block;
+        background-color: #fff;
+        text-align: center;
+        &.active {
+          height: 50px;
+          font-weight: bold;
+        }
+      }
+    }
+    ul.main-menu {
+      @extend .base-menu;
+    }
+    ul.language-menu {
+      @extend .base-menu;
+      text-align: right;
+    }
+  }
+}

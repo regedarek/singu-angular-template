@@ -1,0 +1,29 @@
+<nav class="wraper" ng-controller="NavbarCtrl as navbar">
+
+  <ul class="main-menu">
+    <li ui-sref-active="active">
+      <a ui-sref="home" translate>Home</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="secured" translate>Secured</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="login" translate>Login</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="users" translate>Users</a>
+    </li>
+    <li ui-sref-active="active">
+      <a ui-sref="wysiwyg" translate>Edytor</a>
+    </li>
+
+  </ul>
+
+  <ul class="language-menu">
+    <li>
+      <a ng-hide="currentLanguage == null" ng-click="switchLanguage(null)">Dev</a>
+      <a ng-hide="currentLanguage == 'pl'" ng-click="switchLanguage('pl')">Pl</a>
+    </li>
+  </ul>
+
+</nav>
